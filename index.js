@@ -11,6 +11,9 @@ const path = require("path");
 // exposes on req.body
 const bodyParser = require("body-parser");
 
+// DB connection requirement
+require("./src/database/connection");
+
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
